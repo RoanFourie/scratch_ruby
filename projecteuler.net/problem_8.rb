@@ -52,7 +52,7 @@ def largest_product_in_series(digits, large_number)
     end
     # puts(values)
     sorted = list_of_products.sort.reverse
-    puts(sorted)
+    # puts(sorted)
     return sorted[0]
 end
 
