@@ -26,11 +26,18 @@ def get_nth_triangle_number(nth)
     #           nth = 3 would give 6
     #           nth = 4 would give 10
     #           nth = 5 would give 15
-    sum = 0
-    (1..nth).each do |n|
-        sum = sum + n
-    end
-    return sum
+
+    # Original Code:
+    # sum = 0
+    # (1..nth).each do |n|
+    #     sum = sum + n
+    # end
+    # return sum
+
+    # Imporved Code:
+    # t = n*(n+1)/2
+    n = nth
+    return n*(n+1)/2
 end
 
 def get_divisors(number)
@@ -78,8 +85,8 @@ end
 
 
 n = 500
-puts("divisable_triangular_number with more than %s divisors is %s" %
+puts("The divisable triangular number with more than %s divisors is %s" %
         [n, divisable_triangular_number(n)])
-puts("the (%s)nth triangle number is %s" % [n, get_nth_triangle_number(n)])
+puts("The (%s)nth triangle number is %s" % [n, get_nth_triangle_number(n)])
 v = (get_divisors(get_nth_triangle_number(n))).length
-puts("amount of divisors is for (%s)nth triangle number is  %s" % [n, v])
+puts("The amount of divisors for (%s)nth triangle number is %s" % [n, v])
