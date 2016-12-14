@@ -1,0 +1,149 @@
+
+
+Settings:
+Core:
+Project Home = C:\projects
+
+Editor:
+Font Family = Hack  http://sourcefoundry.org/hack/
+show Invisibles = checked
+show Indent Guide = checked
+show line numbers = checked
+soft tab = checked
+Tab Length = 4
+
+Packages:
+community packages:
+ask-stack
+atom-bootstrap3
+autocomplete-python
+color-picker
+css-snippets
+django-templates
+emmet
+highlight-selected
+language-batch
+language-vbscript
+linter
+linter-flake8
+linter-pep8
+pigments
+script
+tablr
+todo-show
+
+core packages:
+about
+archive-view
+autocomplete-atom-api
+autocomplete-css
+autocomplete-html
+autocomplete-plus
+autocomplete-snippets
+autoflow
+autosave
+background-tips
+bookmarks
+bracket-matcher
+command-pallette
+deprecation-cop
+dev-live-reload
+encoding-selector
+exception-reporting
+find-and-replace
+fuzzy-finder
+git-diff
+go-to-line
+grammer-selector
+image-view
+incompatible-packages
+keybinding-resolver
+language-c
+language-clojure
+language-coffee-script
+language-csharp
+language-css
+language-gfm
+language-git
+language-go
+language-html
+language-hyperlink
+language-java
+language-javascript
+language-json
+language-less
+language-make
+language-mustache
+language-objective-c
+language-perl
+language-php
+language-property-list
+language-python
+language-ruby
+language-ruby-on-rails
+language-shellscript
+language-source
+language-sql
+language-text
+language-todo
+language-toml
+language-xml
+language-yaml
+line-ending-selector
+link
+markdown-preview
+metrics
+notifications
+open-on-github
+package-generator
+settings-view
+snippets
+spell-check
+status-bar
+styleguide
+symbols-view
+tabs
+timecop
+tree-view
+update-package-dependencies
+welcome
+whitespace
+wrap-guide
+
+Themes:
+UI Theme = One Dark
+Syntax Theme = Solarized Dark
+
+styles.less
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+// style the background color of the tree view
+.tree-view {
+  //background-color: whitesmoke;
+}
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  // color: white;
+  //background-color: hsl(180, 24%, 12%);
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow expression
+atom-text-editor::shadow .cursor {
+  // border-color: red;
+}
