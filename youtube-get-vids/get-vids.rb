@@ -27,7 +27,7 @@ list_of_videos.each do |video|
     50.times {putc("*")}
     puts("\n#{video}")
   end
-  sleep(3)
+  sleep(30)  # Wait a little as not to bombard the server and get banned
 end
 50.times { putc("*")}
 puts "\ncompleted"
