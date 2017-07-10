@@ -32,3 +32,8 @@ result = h2.to_a
 #     [[1, 12], [5, 6]]
 #   ]
 puts "result = #{result}"
+
+
+# The condensed array can be expanded via:
+[[[1, 5, 6], [12]], [[1, 12], [5, 6]]].flat_map { |a, b| a.product(b) }
+#=> [[1, 12], [5, 12], [6, 12], [1, 5], [1, 6], [12, 5], [12, 6]]
